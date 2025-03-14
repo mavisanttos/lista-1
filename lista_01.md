@@ -136,6 +136,7 @@ II. Em JavaScript, a herança é implementada através da palavra-chave `extends
 
 
 - A alternativa correta é: a) As duas afirmações são verdadeiras, e a segunda justifica a primeira.
+A herança permite que uma classe filha herde métodos e propriedades de uma classe pai, para enxutar o código e evitar repetições. A herança é feita com a palavra-chave *extends*, permitindo, assim, que uma classe herde métodos e propriedades de outra.
 
 b) As duas afirmações são verdadeiras, mas a segunda não justifica a primeira.
 
@@ -178,7 +179,8 @@ III) O código não funciona corretamente, pois Funcionario não pode herdar de 
 
 Quais das seguintes afirmações são verdadeiras sobre o código acima?
 
-a) I e II são verdadeiras.
+- A alternativa correta é: a) I e II são verdadeiras.
+Como a classe *Funcionarios* estende *Pessoa* (usando *extends*), ele herda os atributos de nome e idade diretamente. Os métodos se sobrepoem e chamamos o *super.apresentar(*) para executar o método *apresentar* da classe *Pessoa*. O JavaScript suporta sim herança de classes, desde que use a palavra-chave *extends*.
 
 b) I, II e III são verdadeiras.
 
@@ -195,7 +197,8 @@ ______
 
 a) A asserção é falsa e a razão é verdadeira.
 
-b) A asserção é verdadeira e a razão é falsa.
+- A alternativa correta é: b) A asserção é verdadeira e a razão é falsa.
+O polimorfismo na POO permite  que objetos de diferentes classes respondam a um mesmo método de formas diferentes, respeitando suas próprias regras e comportamentos. Sobrecarga de métodos em uma classe não existe no JaveScript como existe em Java por exemplo
 
 c) A asserção é verdadeira e a razão é verdadeira, mas a razão não explica a asserção.
 
@@ -216,6 +219,18 @@ function somaArray(numeros) {
 }
 console.log(somaArray([1, 2, 3, 4]));
 ```
+```javascript
+function somaArray(numeros) {
+    let soma = 0 // definição da variável soma
+
+    for (i = 0; i < numeros.lenght; i++) { // troca de size por lenght
+        soma += 2*numeros[i]; // deve-se somar os valor, e não mudar a tribuição da variável
+    }
+    return soma;
+}
+console.log(somaArray([1, 2, 3, 4])); // 20
+```
+
 ______
 10) Crie um exemplo prático no qual você tenha duas classes:
 
